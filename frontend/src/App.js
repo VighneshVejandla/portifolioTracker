@@ -44,15 +44,26 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        {/* <Header /> */}
         <Header onAddStockClick={() => setShowStockForm(true)} /> {/* Pass the click handler to Header */}
 
         {showStockForm && (
-          <StockForm
-            onAddStock={handleAddStock}
-            onUpdateStock={handleUpdateStock}
-            closeForm={closeForm}
-          />
+          // <StockForm
+          //   onAddStock={handleAddStock}
+          //   onUpdateStock={handleUpdateStock}
+          //   closeForm={closeForm}
+          // />
+          <div className="modal">
+            <div className="modal-content">
+              <button className="close-button" onClick={closeForm}>
+                &times;
+              </button>
+              <StockForm
+                onAddStock={handleAddStock}
+                onUpdateStock={handleUpdateStock}
+                closeForm={closeForm}
+              />
+            </div>
+          </div>
         )}
         <Dashboard stocks={stocks} />
         {/* <StockForm onAddStock={handleAddStock} onUpdateStock={handleUpdateStock} /> */}
