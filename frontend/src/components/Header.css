@@ -1,51 +1,127 @@
-/* Header styling */
+    /* Header styling */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #007bff;
-    padding: 15px 30px;
-    color: white;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the header stays on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff; /* Blue background */
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 8px;
   
-  .header .logo h1 {
-    margin: 0;
-    font-size: 1.8em;
-    font-weight: bold;
+}
+
+.header .logo h1 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.header .nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header .nav-links ul li {
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.header .nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.header .nav-links ul li a:hover {
+  color: black; /* Golden color on hover */
+}
+
+.header .nav-links ul li a svg {
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.header .nav-links ul li a:hover svg {
+  transform: translateX(5px); /* Add animation effect to icons */
+}
+
+.header .nav-links .add-stock-btn {
+  background-color: #28a745; /* Green background */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.header .nav-links .add-stock-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+.header .nav-links .add-stock-btn:focus {
+  outline: none;
+}
+
+.header .nav-links .add-stock-btn svg {
+  margin-right: 8px; /* Space between icon and text */
+  transition: transform 0.2s ease;
+}
+
+.header .nav-links .add-stock-btn:hover svg {
+  transform: translateX(5px); /* Icon slide effect */
+}
+
+/* Additional Styling for Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
   }
-  
+
   .header .nav-links ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
-  
+
   .header .nav-links ul li {
-    margin-left: 20px;
+    margin-left: 0;
+    margin-top: 15px;
   }
-  
+
+  .header .logo h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
   .header .nav-links ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 500;
+    font-size: 1.1rem;
   }
-  
-  .header .nav-links ul li a:hover {
-    text-decoration: underline;
-  }
-  
 
   .header .nav-links .add-stock-btn {
-    /* background-color: #f0ad4e; */
-    color: black;
-    padding: 6px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
+    margin-top: 20px;
+    width: 100%;
   }
-  
-  .header .nav-links .add-stock-btn:hover {
-    background-color: #e68a00;
-  }
+}

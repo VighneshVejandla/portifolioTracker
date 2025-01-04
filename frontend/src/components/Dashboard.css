@@ -1,45 +1,62 @@
-/* General Styling */
-.dashboard {
+   .dashboard {
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background: linear-gradient(145deg, #ffffff, #f7f7f7);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .dashboard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
   }
   
   .dashboard h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 20px;
     color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  .dashboard h2:hover {
+    color: #007BFF;
   }
   
   .dashboard p {
     font-size: 1.2rem;
     color: #555;
     margin: 10px 0;
+    line-height: 1.6;
   }
   
-  /* Highlighted Text */
   .dashboard p strong {
     color: #007BFF;
+    font-weight: bold;
   }
   
-  /* Total Portfolio Value Styling */
   .dashboard .total-value {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: 600;
     color: #28a745;
     margin: 20px 0;
+    background: linear-gradient(145deg, #28a745, #2c9f5e);
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Top Performing Stock Styling */
   .dashboard .top-performing-stock {
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: 600;
     color: #ff6347;
   }
   
@@ -48,25 +65,23 @@
     color: #555;
   }
   
-  /* Portfolio Distribution Styling */
   .dashboard .distribution {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #333;
     margin-top: 20px;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .dashboard {
-      padding: 15px;
+      padding: 20px;
     }
   
     .dashboard h2 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
   
     .dashboard p {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
   

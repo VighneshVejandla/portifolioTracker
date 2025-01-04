@@ -39,6 +39,7 @@ const StockForm = ({ onAddStock, onUpdateStock, closeForm }) => {
 
   return (
     <form onSubmit={handleSubmit} className="stock-form">
+      <h2>Add Stock</h2>
       <input
         type="text"
         name="name"
@@ -71,8 +72,9 @@ const StockForm = ({ onAddStock, onUpdateStock, closeForm }) => {
         placeholder="Price"
         required
       />
+      <div className="button-group">
       <button type="submit">{editing ? "Update Stock" : "Add Stock"}</button>
-      <button type="button" onClick={handleCancel} className="cancel-btn">Cancel</button>
+      <button type="button" onClick={handleCancel} className="cancel-btn">Cancel</button></div>
 
     </form>
   );

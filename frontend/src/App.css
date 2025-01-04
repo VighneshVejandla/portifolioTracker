@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 10px;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+    overflow-y: scroll;  /* Allow vertical scroll but hide scrollbar */
+    height: 100%;  /* Ensure body takes full height */
+    background-color: #f4f4f4;  /* Optional: Set a background color */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar in webkit browsers (Chrome, Safari) */
+  }

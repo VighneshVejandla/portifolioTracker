@@ -3,6 +3,8 @@ import Dashboard from "./components/Dashboard";
 import StockForm from "./components/StockForm";
 import StockTable from "./components/StockTable";
 import Header from './components/Header';
+import Footer from "./components/Footer";
+import './App.css';
 import { getStocks, addStock, updateStock, deleteStock } from "./services/stockService";
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -59,6 +61,8 @@ const App = () => {
         onDeleteStock={handleDeleteStock} 
         onUpdateStock={handleUpdateStock} 
       />
+
+      <Footer/>
     </div>
     </Router>
   );
