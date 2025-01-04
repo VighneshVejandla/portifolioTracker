@@ -11,13 +11,13 @@ const Dashboard = ({ stocks }) => {
     );
   }
 
-  const totalValue = stocks.reduce((total, stock) => 
-    total + (stock.quantity || 0) * (stock.price || 0), 
+  const totalValue = stocks.reduce((total, stock) =>
+    total + (stock.quantity || 0) * (stock.price || 0),
     0
   );
 
-  const topPerformingStock = stocks.reduce((top, stock) => 
-    (top.price * top.quantity < stock.price * stock.quantity) ? stock : top, 
+  const topPerformingStock = stocks.reduce((top, stock) =>
+    (top.price * top.quantity < stock.price * stock.quantity) ? stock : top,
     stocks[0]
   );
 

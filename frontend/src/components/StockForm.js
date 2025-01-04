@@ -28,7 +28,7 @@ const StockForm = ({ onAddStock, onUpdateStock, closeForm }) => {
     }
     setFormData({ name: "", symbol: "", quantity: "", price: "" });
     setEditing(false);
-    closeForm(); 
+    closeForm();
   };
 
   const handleCancel = () => {
@@ -73,8 +73,8 @@ const StockForm = ({ onAddStock, onUpdateStock, closeForm }) => {
         required
       />
       <div className="button-group">
-      <button type="submit">{editing ? "Update Stock" : "Add Stock"}</button>
-      <button type="button" onClick={handleCancel} className="cancel-btn">Cancel</button></div>
+        <button type="submit">{editing ? "Update Stock" : "Add Stock"}</button>
+        <button type="button" onClick={handleCancel} className="cancel-btn">Cancel</button></div>
 
     </form>
   );

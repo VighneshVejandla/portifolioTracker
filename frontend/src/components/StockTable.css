@@ -1,4 +1,4 @@
-   /* General Table Styling */
+/* General Table Styling */
 .stock-table {
   width: 90%;
   max-width: 800px;
@@ -7,7 +7,7 @@
   background: linear-gradient(145deg, #ffffff, #f0f0f0);
   border-radius: 12px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   transition: all 0.3s ease;
 }
 

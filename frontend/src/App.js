@@ -11,13 +11,13 @@ import { BrowserRouter as Router } from 'react-router-dom';
 const App = () => {
   const [stocks, setStocks] = useState([]);
   const [showStockForm, setShowStockForm] = useState(false);
-  
+
   useEffect(() => {
     const fetchStocks = async () => {
       const stockData = await getStocks();
       setStocks(stockData);
     };
-    
+
     fetchStocks();
   }, []);
 
@@ -43,27 +43,27 @@ const App = () => {
 
   return (
     <Router>
-    <div className="App">
-      {/* <Header /> */}
-      <Header onAddStockClick={() => setShowStockForm(true)} /> {/* Pass the click handler to Header */}
-        
+      <div className="App">
+        {/* <Header /> */}
+        <Header onAddStockClick={() => setShowStockForm(true)} /> {/* Pass the click handler to Header */}
+
         {showStockForm && (
-          <StockForm 
-            onAddStock={handleAddStock} 
+          <StockForm
+            onAddStock={handleAddStock}
             onUpdateStock={handleUpdateStock}
             closeForm={closeForm}
           />
         )}
-      <Dashboard stocks={stocks} />
-      {/* <StockForm onAddStock={handleAddStock} onUpdateStock={handleUpdateStock} /> */}
-      <StockTable 
-        stocks={stocks} 
-        onDeleteStock={handleDeleteStock} 
-        onUpdateStock={handleUpdateStock} 
-      />
+        <Dashboard stocks={stocks} />
+        {/* <StockForm onAddStock={handleAddStock} onUpdateStock={handleUpdateStock} /> */}
+        <StockTable
+          stocks={stocks}
+          onDeleteStock={handleDeleteStock}
+          onUpdateStock={handleUpdateStock}
+        />
 
-      <Footer/>
-    </div>
+        <Footer />
+      </div>
     </Router>
   );
 };

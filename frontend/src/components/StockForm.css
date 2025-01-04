@@ -1,4 +1,4 @@
-  /* Form styling */
+/* Form styling */
 .stock-form {
   max-width: 500px;
   margin: 20px auto;
@@ -6,7 +6,7 @@
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .stock-form input {
@@ -16,7 +16,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   transition: all 0.3s ease-in-out;
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -42,7 +42,6 @@
 .stock-form input:focus::placeholder {
   color: #007bff;
 }
-
 
 .stock-form button {
   width: 100%;

@@ -1,22 +1,24 @@
-    /* Header styling */
+/* Header styling */
 .header {
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensure the header stays on top */
+  z-index: 1000;
+  /* Ensure the header stays on top */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #007bff; /* Blue background */
+  background-color: #007bff;
+  /* Blue background */
   padding: 15px 30px;
   color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add subtle shadow */
   border-radius: 8px;
-  
 }
 
 .header .logo h1 {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
   letter-spacing: 1px;
@@ -48,7 +50,8 @@
 }
 
 .header .nav-links ul li a:hover {
-  color: black; /* Golden color on hover */
+  color: black;
+  /* Golden color on hover */
 }
 
 .header .nav-links ul li a svg {
@@ -57,11 +60,13 @@
 }
 
 .header .nav-links ul li a:hover svg {
-  transform: translateX(5px); /* Add animation effect to icons */
+  transform: translateX(5px);
+  /* Add animation effect to icons */
 }
 
 .header .nav-links .add-stock-btn {
-  background-color: #28a745; /* Green background */
+  background-color: #28a745;
+  /* Green background */
   color: white;
   padding: 8px 16px;
   border: none;
@@ -75,8 +80,10 @@
 }
 
 .header .nav-links .add-stock-btn:hover {
-  background-color: #218838; /* Darker green on hover */
-  transform: scale(1.05); /* Slight scaling effect */
+  background-color: #218838;
+  /* Darker green on hover */
+  transform: scale(1.05);
+  /* Slight scaling effect */
 }
 
 .header .nav-links .add-stock-btn:focus {
@@ -84,12 +91,14 @@
 }
 
 .header .nav-links .add-stock-btn svg {
-  margin-right: 8px; /* Space between icon and text */
+  margin-right: 8px;
+  /* Space between icon and text */
   transition: transform 0.2s ease;
 }
 
 .header .nav-links .add-stock-btn:hover svg {
-  transform: translateX(5px); /* Icon slide effect */
+  transform: translateX(5px);
+  /* Icon slide effect */
 }
 
 /* Additional Styling for Responsiveness */
