@@ -26,6 +26,7 @@ const StockForm = ({ onAddStock, onUpdateStock, closeForm }) => {
     } else {
       onAddStock(formattedData);
     }
+
     setFormData({ name: "", symbol: "", quantity: "", price: "" });
     setEditing(false);
     closeForm();
@@ -75,7 +76,6 @@ const StockForm = ({ onAddStock, onUpdateStock, closeForm }) => {
       <div className="button-group">
         <button type="submit">{editing ? "Update Stock" : "Add Stock"}</button>
         <button type="button" onClick={handleCancel} className="cancel-btn">Cancel</button></div>
-
     </form>
   );
 };
