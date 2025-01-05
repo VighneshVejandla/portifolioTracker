@@ -41,7 +41,7 @@ This is a full-stack web application that allows users to manage their stock por
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo-url.git
+   git clone https://github.com/VighneshVejandla/portifolioTracker
    cd VighneshVejandla-portfolioTracker/backend
    ```
 
